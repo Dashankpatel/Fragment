@@ -42,11 +42,13 @@ public class MainActivity extends AppCompatActivity {
         list.add(new FirstFragment());
         list.add(new SecondFragment());
         list.add(new ThirdFragment());
+        list.add(new ForthFragment());
 
         ArrayList<String> nameList = new ArrayList<>();
         nameList.add("First");
         nameList.add("Second");
         nameList.add("Third");
+        nameList.add("Forth");
 
         MyAdapter myAdapter = new MyAdapter(getSupportFragmentManager(),list,nameList);
         viewPager.setAdapter(myAdapter);
